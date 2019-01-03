@@ -22,6 +22,7 @@ public class ConvidadoController {
 	@RequestMapping("listaConvidados")
 	public String listaConvidados(Model model){
 
+		
 	    Iterable<Convidado> convidados = repository.findAll();
 	    model.addAttribute("convidados", convidados);
 
